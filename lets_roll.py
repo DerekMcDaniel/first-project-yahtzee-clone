@@ -619,21 +619,9 @@ def score_grand_total():
         if yahtzee.player_a.score_dict_bot["Grand Total"] > yahtzee.player_b.score_dict_bot["Grand Total"]:
             winner = Label(mid_frame, text="Player One Wins!!!!", font="-weight bold", bg="red")
             winner.pack(ipadx=10, ipady=10)
-            print('player 1 ---------', yahtzee.player_a.score_dict, yahtzee.player_a.score_dict_bot)
-            print('player 1 ---------', yahtzee.player_a.top_half_count, yahtzee.player_a.bottom_half_count)
-            print('    -     ')
-            print('player 2 ---------', yahtzee.player_b.score_dict, yahtzee.player_b.score_dict_bot)
-            print('    -     ')
-            print('player 2 ---------', yahtzee.player_b.top_half_count, yahtzee.player_b.bottom_half_count)
         else:
             winner = Label(mid_frame, text="Player Two Wins!!!!", font="-weight bold", bg="red")
             winner.pack(ipadx=10, ipady=10)
-            print('player 1 ---------', yahtzee.player_a.score_dict, yahtzee.player_a.score_dict_bot)
-            print('player 1 ---------', yahtzee.player_a.top_half_count, yahtzee.player_a.bottom_half_count)
-            print('    -     ')
-            print('player 2 ---------', yahtzee.player_b.score_dict, yahtzee.player_b.score_dict_bot)
-            print('    -     ')
-            print('player 2 ---------', yahtzee.player_b.top_half_count, yahtzee.player_b.bottom_half_count)
     except:
         pass
 
